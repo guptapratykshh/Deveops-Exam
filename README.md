@@ -101,5 +101,3 @@ cargo +nightly fmt --all
 cargo clippy --all -- -D warnings
 cargo clippy --tests -- -D warnings
 ```
-
-PRs are welcome 😄
