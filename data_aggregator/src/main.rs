@@ -17,6 +17,7 @@ async fn main() -> Result<(), anyhow::Error> {
     // TODO: Check again error handling and propagations with more tests.
     // TODO: Add separation between the data aggregated by the aggregator and the api consuming the data from the aggregator.
 
+    // Main server implementation for Nexus Data Bridge
     run_server().await?;
 
     Ok(())
