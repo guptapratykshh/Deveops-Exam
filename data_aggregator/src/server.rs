@@ -11,6 +11,8 @@ use tower_http::timeout::TimeoutLayer;
 
 use crate::types::{Account, AppError, DataAggregator, Retrieval, Transaction};
 
+// Server logic for Nexus Data Bridge
+
 async fn server_log(aggregator: DataAggregator, interval_in_sec: u64) -> Result<(), anyhow::Error> {
     let mut interval = interval(Duration::from_secs(interval_in_sec));
 
