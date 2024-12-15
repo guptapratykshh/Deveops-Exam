@@ -99,3 +99,5 @@ impl IntoResponse for AppError {
             .unwrap()
     }
 }
+
+// Types and data structures for Nexus Data Bridge
