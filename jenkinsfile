@@ -4,14 +4,14 @@ pipeline{
         nodejs 'nodejs'
     }
     stages{
-        stage('Build'){
+        stage('Install Dependencies'){
             steps{
             sh 'npm install'
             }
         }
         stage('Test'){
             steps{
-            sh 'npm install' || echo "No tests defined"
+            sh 'npm test || echo "No tests defined"'
             }
         }
         stage('Build'){
